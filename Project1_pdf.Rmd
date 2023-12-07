@@ -1,0 +1,93 @@
+---
+title: "Solow Model: Logistic and Exponential Growth in Comparison"
+titlerunning: Project 1
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+thanks: 
+author:
+    name: Jonathan Leistner
+    address: "Growth and Development: Theory, Leipzig University"
+    email: ol81ciwa@studserv.uni-leipzig.de
+abstract: |
+  This letter extends "Cheating with Models" by Eliaz, Kfir, Ran Spiegler, and Yair Weiss (2021, American Economic Review: Insights, 3 (4): 417-34. DOI: 10.1257/aeri.20200635) to indicator variables and the heuristics used to analyze natural experiments. As such, it contributes a missing piece to "Methods Matter: p-Hacking and Publication Bias in Causal Analysis in Economics" by Brodeur, Abel, Nikolai Cook, and Anthony Heyes (2020, American Economic Review, 110 (11): 3634-60. DOI: 10.1257/aer.20190687). The underlying statistical issue is a type of streak selection discussed in "Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers" by Joshua B. Miller and Adam Sanjurjo (2018, Econometrica, 86: 2019-2047. DOI: 10.3982/ECTA14943). The overarching methodological point is to ``estimate, not testimate'' (McCloskey, 2008, p.249 of The Cult of Statistical Significance).
+output: rticles::elsevier_article
+---
+
+<!--bibliography: bibliography.bib-->
+
+<!--output:-->
+
+<!--    html_document:-->
+
+<!--        code_download: true-->
+
+<!--output: rticles::elsevier_article-->
+
+
+\newpage
+
+In this project, I compare the transitional dynamics of the Solow Model considering two different types of population growth. First, the standard exponential growth assumption, where the growth rate of population is constant and larger than zero. And second, population growing according to a logistic function where the growth rate   
+```{r, message=F, warning=F, results='asis', out.width="100%"}
+paste("The Population grows on average by around", round((results_exponential$L[200]/L_init)/length(periods),1), "workers per period")
+
+```
+
+\newpage
+
+The Rate of convergence has been calculated by the formula
+
+```{r, message=F, warning=F, results='asis', out.width="100%"}
+
+```
+
+
+# For more control, try these Difference-In-Differences!
+
+```{r, message=F, warning=F, results='asis', out.width="100%"}
+```
+
+```{r, echo=FALSE}
+knitr::knit_exit()
+```
+
+```{=html}
+<!--bibliography: bibliography.bib
+<!--    @article{10.1257/aeri.20200635,-->
+```
+<!--    Author = {Eliaz, Kfir and Spiegler, Ran and Weiss, Yair},-->
+
+<!--    Title = {Cheating with Models},-->
+
+<!--    Journal = {American Economic Review: Insights},-->
+
+<!--    Volume = {3},-->
+
+<!--    Number = {4},-->
+
+<!--    Year = {2021},-->
+
+<!--    Month = {December},-->
+
+<!--    Pages = {417-34},-->
+
+<!--    DOI = {10.1257/aeri.20200635},-->
+
+<!--    URL = {https://www.aeaweb.org/articles?id=10.1257/aeri.20200635}}-->
+
+<!--dat2 <- data.frame(t=n_index, y1=random_walk1, y2=random_walk2, d=reversal)-->
+
+<!--dat2_long <- reshape(dat2, varying=list( c('y1','y2') ), direction='long', timevar='RW')-->
+
+<!--sub_id <- dat2_long$t>wind2[1] & dat2_long$t < wind2[2]-->
+
+<!--dat2_sub <- dat2_long[sub_id,]-->
+
+<!-- Practice makes perfect, and you'll be finding causal relationships in no time.-->
+
+<!--www.damianclarke.net/teaching/Microeconometria/microeconometria.pdf-->
+
+```{=html}
+<!-- ## COMPILE FROM CLI
+    Rscript -e "rmarkdown::render('Template_Paper.Rmd')"
+    latexmk -c  && rm *.spl
+-->
+```

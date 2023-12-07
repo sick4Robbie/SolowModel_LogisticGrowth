@@ -1,0 +1,48 @@
+[1] "Consumption for s = 1 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+      0       0       0       0       0       0 
+> sum(results$C)
+[1] 0
+
+[1] "Consumption for s = 0.9 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.1000  0.2699  0.2907  0.2715  0.2943  0.2950 
+> sum(results$C)
+[1] 27.15351
+
+[1] "Consumption for s = 0.7 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.3000  0.7183  0.7712  0.7229  0.7803  0.7819 
+> sum(results$C)
+[1] 72.28884
+
+[1] "Consumption for s = 0.5 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.500   1.021   1.090   1.028   1.102   1.104 
+> sum(results$C)
+[1] 102.8146
+
+[1] "Consumption for s = 0.3 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.700   1.128   1.189   1.136   1.200   1.202 
+> sum(results$C)
+[1] 113.5881
+
+[1] "Consumption for s = 0.2 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.800   1.074   1.116   1.081   1.124   1.125 
+> sum(results$C)
+[1] 108.0549
+
+[1] "Consumption for s = 0 :"
+> summary(results$C)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.03200 0.07566 0.17890 0.28360 0.42299 1.00000 
+> sum(results$C)
+[1] 28.35982
